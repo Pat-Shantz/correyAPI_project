@@ -7,6 +7,7 @@ fetch("https://api.sampleapis.com/futurama/characters")
   .then((response) => response.json())
   //response.json() -> converts the response body to a Javascript object/array
   .then((characters) => {
+    console.log(characters)
   //.then((characters) ... receives the parsed JSON data (an array) - and then parses (turns) it into a JavaScript Array (called 'characters') - (im defining an anonymous function)
     characters.forEach((character) => {
       // Your code goes here to render each character name in the ol#character-list element
